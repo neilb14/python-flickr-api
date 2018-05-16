@@ -1325,7 +1325,7 @@ class Photo(FlickrObject):
         with open(filename + file_ext, 'wb') as f:
             f.write(r.read())
             f.close()
-        return filename
+        return filename + file_ext
 
     def show(self, size_label=None):
         """
